@@ -9,7 +9,7 @@ def annex_habitat(arboretum):
     print("4. Grassland")
 
     choice = input("Choose your habitat > ")
-
+# Incomplete needs to be written to account for all options
     if choice == "1":
         river = River()
         arboretum.rivers.append(river)
