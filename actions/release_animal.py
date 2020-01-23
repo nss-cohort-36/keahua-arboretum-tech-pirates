@@ -24,3 +24,15 @@ def release_animal(arboretum):
     arboretum.rivers[int(choice) - 1].animals.append(animal)
 
 
+# *******************************
+# Charles To-do Notes
+# *******************************
+# Dragonfly should not be included in the relaease animals section on line 7
+# animals that need to be added to this module: 
+# 1. Gold Dust Day Gecko 
+# 3. Nene Goose
+# 4. Kīkākapu
+# 5. Pueo
+# 6. 'Ulae
+# 7. Ope'ape'a
+# 8. Happy-Face Spider
