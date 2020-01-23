@@ -1,5 +1,6 @@
-from interfaces import IAquatic
-
+from interfaces.aquatic import IAquatic
+# Error 1 solving Circular Import due to import path being without direction to aquatic. Example: from aquatic import IAquatic
+# Solution from interfaces.aquatic import IAquatic
 class IFreshwater(IAquatic):
 
     def __init__(self):
