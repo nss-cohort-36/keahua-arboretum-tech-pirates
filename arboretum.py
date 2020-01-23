@@ -18,3 +18,4 @@ class Arboretum:
 
 #     def annex_river(self, river):
 #         self.__rivers.append(river)
+# cp Need to create attributes for all missing biomes

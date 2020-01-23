@@ -34,6 +34,7 @@ def main_menu():
 
     if choice == "3":
         pass
+    # Need to add Logic for This option to do something other than nothing. Need to also build menu for htis to go to once it is used. 
 
 # NEED FUNCTIONALITY THAT WILL DISPLAY THE FOLLOWING MENU WHEN 4 IS PRESSED:
 # Added cultivate_plant.py in actions folder to hold the code to display this menu. WORKS!
@@ -54,3 +55,4 @@ main_menu()
 
 # FIX Errors
 # Error 1: Circular Import found at freshwater.py and fixed via path alteration. Reference site StackAbuse or Overflow
+# 
