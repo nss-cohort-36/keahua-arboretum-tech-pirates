@@ -1,9 +1,10 @@
 import os
+from /keahua-arboretum-tech-pirates/arboretum.py import Arboretum
 from biomes import River
 #add imports for rest of biomes
 
 # cp Need to add proper imports
-def annex_biome(arboretum):
+def annex_biome(Arboretum):
     os.system('cls' if os.name == 'nt' else 'clear')
     print("1. River")
     print("2. Swamp")
@@ -17,6 +18,7 @@ def annex_biome(arboretum):
         river = River()
         arboretum.rivers.append(river)
     if choice == "2":
-        pass
+        swamp = Swamp()
+        arboretum.swamps.append(swamp)
 # cp Need to add functionality for append options
 # cp Need to create files and classes for all missing biomes
