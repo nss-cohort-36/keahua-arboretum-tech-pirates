@@ -33,7 +33,7 @@ def main_menu():
         release_animal(keahua)
 
     if choice == "3":
-        pass
+        animal_to_feed_menu(keahua)
 # Need to add Logic for This option to do something other than nothing. Need to also build menu for htis to go to once it is used. 
 
 # NEED FUNCTIONALITY THAT WILL DISPLAY THE FOLLOWING MENU WHEN 4 IS PRESSED:
