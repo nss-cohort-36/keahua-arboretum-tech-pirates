@@ -1,4 +1,4 @@
-class ISwimming:
+class IsSwimming:
 
     def __init__(self):
         self.swim_speed = 0
