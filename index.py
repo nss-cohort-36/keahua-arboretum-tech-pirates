@@ -1,11 +1,12 @@
+# Authors: Sam Pita, Christian Pippin, Jeremiah Bell, Charles Jackson, Caroline Brownlee
+
 import os
 from arboretum import Arboretum
 from actions.annex import annex_habitat
 from actions.release_animal import release_animal
 from actions.report import build_facility_report
+from actions.cultivate_plant_menu import cultivate_plant_menu
 from actions.feed_animal import animal_to_feed_menu
-# ADDED THIS IMPORT TO PRODUCE MENU WHEN NUMBER 4 IS CHOSEN. NEEDS TO BE UNCOMMENTED FOR CODE ON CHOICE 4 TO WORK:
-# from actions.cultivate_plant import cultivate_plant
 
 keahua = Arboretum("Keahua Arboretum", "123 Paukauila Lane")
 
@@ -37,13 +38,8 @@ def main_menu():
         animal_to_feed_menu()
 # Need to add Logic for This option to do something other than nothing. Need to also build menu for htis to go to once it is used. 
 
-# NEED FUNCTIONALITY THAT WILL DISPLAY THE FOLLOWING MENU WHEN 4 IS PRESSED:
-# Added cultivate_plant.py in actions folder to hold the code to display this menu. WORKS!
     if choice == "4":
-        pass
-        # the following method needs to be uncommented and "pass" removed:
-
-        # cultivate_plant(keahua)
+        cultivate_plant_menu(keahua)
 
     if choice == "5":
         build_facility_report(keahua)
