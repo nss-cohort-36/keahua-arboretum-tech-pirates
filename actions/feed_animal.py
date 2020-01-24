@@ -13,3 +13,8 @@ def animal_to_feed_menu():
     print("7. Ope'ape'a")
     print("8. Happy-Face Spider")
     
+    selection = input("Pick a Friendly Critter! They Need Noms!")
+    
+    if selection = "1":
+        animal_to_feed_menu
+    
