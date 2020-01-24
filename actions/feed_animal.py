@@ -1,0 +1,15 @@
+# Jb-Comment: Imports Go up TOP!!!
+
+# Define Calls for Each animal
+
+# Jb-Comment: Based on the instructions seems like I will need to make a menu for when someone selects feed animal to display a list of the animals and allow them to be fed.
+def animal_to_feed_menu():
+    print("1. Gold Dust Day Gecko")
+    print("2. River Dolphin")
+    print("3. Nene Goose")
+    print("4. KiKakapu")
+    print("5. Pueo")
+    print("6. 'Ulae")
+    print("7. Ope'ape'a")
+    print("8. Happy-Face Spider")
+    

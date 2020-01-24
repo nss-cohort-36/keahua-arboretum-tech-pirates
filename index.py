@@ -17,7 +17,6 @@ def build_menu():
     print("5. Display Facility Report")
     print("6. Exit")
 
-
 def main_menu():
     """Show Keahua Action Options
 
