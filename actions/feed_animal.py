@@ -16,5 +16,6 @@ def animal_to_feed_menu():
     selection = input("Pick a Friendly Critter! They Need Noms!")
     
     if selection = "1":
-        animal_to_feed_menu
+        pass
+        # animal_to_feed_menu
     
