@@ -1,15 +1,17 @@
 import os
-from environments import River
+from biomes import River
+#add imports for rest of biomes
 
 # cp Need to add proper imports
-def annex_habitat(arboretum):
+def annex_biome(arboretum):
     os.system('cls' if os.name == 'nt' else 'clear')
     print("1. River")
     print("2. Swamp")
     print("3. Coastline")
     print("4. Grassland")
-# cp Need to add mountain and forest to menu
-    choice = input("Choose your habitat > ")
+    print("5. Mountain")
+    print("6. Forest")
+    choice = input("Choose your biome to annex > ")
 # cp Need to change strings to display appropriately based on the README
     if choice == "1":
         river = River()
