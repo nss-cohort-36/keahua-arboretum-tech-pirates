@@ -1,4 +1,4 @@
-class IFlying:
+class IsFlying:
 
     def __init__(self, wing_count=2):
         self.flight_speed = 0
