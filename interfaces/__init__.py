@@ -7,3 +7,4 @@ from .animals.actions.swimming import IsSwimming
 from .identifiable import Identifiable
 from .habitats.contains_animals import IContainsAnimals
 from .habitats.contains_plants import IContainsPlants
+from .habitats.is_stagnant import IsStagnant
