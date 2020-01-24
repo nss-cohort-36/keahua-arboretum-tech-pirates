@@ -6,6 +6,7 @@ from actions.annex import annex_habitat
 from actions.release_animal import release_animal
 from actions.report import build_facility_report
 from actions.cultivate_plant_menu import cultivate_plant_menu
+from actions.feed_animal import animal_to_feed_menu
 
 keahua = Arboretum("Keahua Arboretum", "123 Paukauila Lane")
 
@@ -17,7 +18,6 @@ def build_menu():
     print("4. Cultivate New Plant")
     print("5. Display Facility Report")
     print("6. Exit")
-
 
 def main_menu():
     """Show Keahua Action Options
@@ -34,8 +34,9 @@ def main_menu():
         release_animal(keahua)
 
     if choice == "3":
-        pass
-    # Need to add Logic for This option to do something other than nothing. Need to also build menu for htis to go to once it is used. 
+# Define Logic to Clear The Console before running this.
+        animal_to_feed_menu()
+# Need to add Logic for This option to do something other than nothing. Need to also build menu for htis to go to once it is used. 
 
     if choice == "4":
         cultivate_plant_menu(keahua)
