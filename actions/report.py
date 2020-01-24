@@ -6,14 +6,24 @@ def build_facility_report(arboretum):
         print(f'River [{river.id}]')
     
     # for mountain
+    for mountain in arboretum.mountains:
+        print(f'Mountain [{mountain.id}]')
     
     # for grassland
+    for grassland in arboretum.grasslands:
+        print(f'Grassland [{grassland.id}]')
     
     # for forest
+    for forest in arboretum.forests:
+        print(f'Forest [{forest.id}]')
     
     # for swamp
+    for swamp in arboretum.swamps:
+        print(f'Swamp [{swamp.id}]')
     
     # for coastline
+    for coastline in arboretum.coastlines:
+        print(f'Coastline [{coastline.id}]')
     
     # -SP
     input("\n\nPress any key to continue...")
