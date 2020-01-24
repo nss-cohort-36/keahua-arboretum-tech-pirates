@@ -1,6 +1,9 @@
 import os
-from /keahua-arboretum-tech-pirates/arboretum.py import Arboretum
+import sys
+sys.path.append('../')
+from arboretum import Arboretum
 from biomes import River
+from biomes import Swamp
 #add imports for rest of biomes
 
 # cp Need to add proper imports
