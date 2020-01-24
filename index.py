@@ -3,6 +3,7 @@ from arboretum import Arboretum
 from actions.annex import annex_habitat
 from actions.release_animal import release_animal
 from actions.report import build_facility_report
+from actions.feed_animal import animal_to_feed_menu
 # ADDED THIS IMPORT TO PRODUCE MENU WHEN NUMBER 4 IS CHOSEN. NEEDS TO BE UNCOMMENTED FOR CODE ON CHOICE 4 TO WORK:
 # from actions.cultivate_plant import cultivate_plant
 
@@ -16,7 +17,6 @@ def build_menu():
     print("4. Cultivate New Plant")
     print("5. Display Facility Report")
     print("6. Exit")
-
 
 def main_menu():
     """Show Keahua Action Options
@@ -33,8 +33,9 @@ def main_menu():
         release_animal(keahua)
 
     if choice == "3":
-        pass
-    # Need to add Logic for This option to do something other than nothing. Need to also build menu for htis to go to once it is used. 
+# Define Logic to Clear The Console before running this.
+        animal_to_feed_menu()
+# Need to add Logic for This option to do something other than nothing. Need to also build menu for htis to go to once it is used. 
 
 # NEED FUNCTIONALITY THAT WILL DISPLAY THE FOLLOWING MENU WHEN 4 IS PRESSED:
 # Added cultivate_plant.py in actions folder to hold the code to display this menu. WORKS!
