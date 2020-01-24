@@ -1,9 +1,10 @@
 import os
 from biomes import River
+from arboretum import Arboretum
 #add imports for rest of biomes
 
 # cp Need to add proper imports
-def annex_biome(arboretum):
+def annex_biome(Arboretum):
     os.system('cls' if os.name == 'nt' else 'clear')
     print("1. River")
     print("2. Swamp")
@@ -15,7 +16,7 @@ def annex_biome(arboretum):
 # cp Need to change strings to display appropriately based on the README
     if choice == "1":
         river = River()
-        arboretum.rivers.append(river)
+        Arboretum.rivers.append(river)
     if choice == "2":
         pass
 # cp Need to add functionality for append options
