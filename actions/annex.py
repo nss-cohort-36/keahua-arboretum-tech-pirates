@@ -3,6 +3,7 @@ import sys
 sys.path.append('../')
 from arboretum import Arboretum
 from biomes import River
+from arboretum import Arboretum
 from biomes import Swamp
 #add imports for rest of biomes
 
@@ -19,7 +20,7 @@ def annex_biome(Arboretum):
 # cp Need to change strings to display appropriately based on the README
     if choice == "1":
         river = River()
-        arboretum.rivers.append(river)
+        Arboretum.rivers.append(river)
     if choice == "2":
         swamp = Swamp()
         arboretum.swamps.append(swamp)
