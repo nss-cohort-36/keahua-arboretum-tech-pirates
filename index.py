@@ -11,7 +11,7 @@ from actions.feed_animal import animal_to_feed_menu
 keahua = Arboretum("Keahua Arboretum", "123 Paukauila Lane")
 
 def build_menu():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear' if os.name == 'nt' else 'clear')
     print("1. Annex Biome")
     print("2. Release Animal into Biome")
     print("3. Feed Animal")
