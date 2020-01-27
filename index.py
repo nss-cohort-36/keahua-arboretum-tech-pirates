@@ -11,7 +11,7 @@ from actions.feed_animal import animal_to_feed_menu
 keahua = Arboretum("Keahua Arboretum", "123 Paukauila Lane")
 
 def build_menu():
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('clear' if os.name == 'nt' else 'clear')
     print("1. Annex Biome")
     print("2. Release Animal into Biome")
     print("3. Feed Animal")
@@ -35,7 +35,7 @@ def main_menu():
 
     if choice == "3":
 # Define Logic to Clear The Console before running this.
-        animal_to_feed_menu()
+        animal_to_feed_menu(keahua)
 # Need to add Logic for This option to do something other than nothing. Need to also build menu for htis to go to once it is used. 
 
     if choice == "4":
