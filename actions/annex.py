@@ -23,8 +23,8 @@ def annex_biome(Arboretum):
         river = River()
         Arboretum.rivers.append(river)
     elif choice == "2":
-        swamp = Swamp()
-        arboretum.swamps.append(swamp)
+        swamp = Swamp("swamp")
+        Arboretum.swamps.append(swamp)
     elif choice == "3":
         coastline = Coastline()
         arboretum.coastline.append(coastline)
