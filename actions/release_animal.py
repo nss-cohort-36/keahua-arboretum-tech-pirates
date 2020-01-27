@@ -16,10 +16,11 @@ def release_animal(arboretum):
     choice = input("Choose animal to release > ")
 
     if choice == "1":
-        # animal = RiverDolphin()
+        # animal_to_release = 
         pass
 
     if choice == "2":
+        animal_to_release = RiverDolphin()
         pass
     if choice == "3":
         pass
