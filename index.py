@@ -35,7 +35,7 @@ def main_menu():
 
     if choice == "3":
 # Define Logic to Clear The Console before running this.
-        animal_to_feed_menu()
+        animal_to_feed_menu(keahua)
 # Need to add Logic for This option to do something other than nothing. Need to also build menu for htis to go to once it is used. 
 
     if choice == "4":
