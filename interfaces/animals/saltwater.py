@@ -1,3 +1,7 @@
+#****************************************************************************
+# This file defines a specific trait for an animal to inherit
+#****************************************************************************
+
 from .aquatic import IsAquatic
 
 class IsSaltwater(IsAquatic):

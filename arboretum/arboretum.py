@@ -1,3 +1,7 @@
+#********************************************************************************************************************
+# This file defines the Arboretum class which houses all of the biomes
+#********************************************************************************************************************
+
 # Jb Personal Comments: Setting an initialized class. Blueprint for creation of objects. Lists set for individual Biomes. Is imported by Index.py
 # Jb Question: Do we need to feed in the Lists and if not Why not?
 class Arboretum:
