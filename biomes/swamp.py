@@ -1,5 +1,5 @@
-# import sys
-# sys.path.append('../')
+import sys
+sys.path.append('../')
 # from interfaces.habitats import IsStagnant
 from interfaces import Identifiable
 from interfaces import IContainsAnimals
@@ -11,11 +11,13 @@ from interfaces import IContainsPlants
 
 class Swamp(IContainsAnimals, IContainsPlants, Identifiable):
 
-    def __init__(self, name):
-        self.name = name
+    def __init__(self):
+        self.name = Swamp
         IContainsAnimals.__init__(self)
         IContainsPlants.__init__(self)
         Identifiable.__init__(self)
+        self.max_animals = 8
+        self.max_plants = 12
 
     def animal_count(self):
         return "This place has a bunch of animals in it"
