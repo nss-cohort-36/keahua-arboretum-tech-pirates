@@ -2,10 +2,13 @@ import os
 import sys
 sys.path.append('../')
 from arboretum import Arboretum
-from biomes import River
-from arboretum import Arboretum
-from biomes import Swamp
+from biomes.river import River
+from biomes.swamp import Swamp
 from biomes.coastline import Coastline
+from biomes.grassland import Grassland
+from biomes.forest import Forest
+from biomes.mountain import Mountain
+from index import main_menu
 #add imports for rest of biomes
 
 # cp Need to add proper imports
@@ -23,22 +26,22 @@ def annex_biome(Arboretum):
     if choice == "1":
         river = River()
         Arboretum.rivers.append(river)
-    elif choice == "2":
+    if choice == "2":
         swamp = Swamp()
         Arboretum.swamps.append(swamp)
-    elif choice == "3":
+    if choice == "3":
         coastline = Coastline()
         Arboretum.coastlines.append(coastline)
-    elif choice == "4":
+    if choice == "4":
         grassland = Grassland()
         Arboretum.grasslands.append(grassland)
-    elif choice == "5":
+    if choice == "5":
         mountain = Mountain()
         Arboretum.mountains.append(mountain)
-    elif choice == "6":
+    if choice == "6":
         forest = Forest()
         Arboretum.forests.append(forest)
-    else choice == "7":
+    if choice == "7":
         main_menu(keahua)
 # cp Need to add functionality for append options
 # cp Need to create files and classes for all missing biomes
