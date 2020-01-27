@@ -1,10 +1,6 @@
 # import sys
 # sys.path.append('../')
-<<<<<<< HEAD
-from interfaces.habitats import IsStagnant
-=======
 # from interfaces.habitats import IsStagnant
->>>>>>> master
 from interfaces import Identifiable
 from interfaces import IContainsAnimals
 from interfaces import IContainsPlants
