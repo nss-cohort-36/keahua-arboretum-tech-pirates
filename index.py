@@ -1,5 +1,9 @@
 # Authors: Sam Pita, Christian Pippin, Jeremiah Bell, Charles Jackson, Caroline Brownlee
 
+#********************************************************************************************************************
+# This file serves as the main/central file that executes the entire application
+#********************************************************************************************************************
+
 import os
 from arboretum import Arboretum
 from actions.annex import annex_biome

@@ -1,3 +1,7 @@
+#********************************************************************************************************************
+# This file defines the Swamp class  
+#********************************************************************************************************************
+
 import sys
 sys.path.append('../')
 # from interfaces.habitats import IsStagnant
@@ -7,7 +11,7 @@ from interfaces import IContainsPlants
 from animals.river_dolphin import RiverDolphin
 
 
-class Swamp(IContainsAnimals, IContainsPlants, Identifiable):
+class Swamp(IContainsAnimals, IContainsPlants, Identifiable): # <-- creates def of River class which is a derivitive class of 3 parent classes
 
     def __init__(self):
         self.name = "Swamp"
