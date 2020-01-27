@@ -4,15 +4,34 @@ from biomes.coastline import Coastline
 def release_animal(arboretum):
     animal = None
 
-    print("1. River Dolphin")
-    print("2. Dragonfly")
+    print("1. Gold Dust Day Gecko")
+    print("2. River Dolphin")
+    print("3. Nene Goose")
+    print("4. Kikakapu")
+    print("5. Pueo")
+    print("6. 'Ulae")
+    print("7. Ope'ape'a")
+    print("8. Happy-Face Spider")
 
     choice = input("Choose animal to release > ")
 
     if choice == "1":
-        animal = RiverDolphin()
+        # animal = RiverDolphin()
+        pass
 
     if choice == "2":
+        pass
+    if choice == "3":
+        pass
+    if choice == "4":
+        pass
+    if choice == "5":
+        pass
+    if choice == "6":
+        pass
+    if choice == "7":
+        pass
+    if choice == "8":
         pass
 
 
