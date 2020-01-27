@@ -17,6 +17,7 @@ def annex_biome(Arboretum):
     print("4. Grassland")
     print("5. Mountain")
     print("6. Forest")
+    print("7. Main Menu")
     choice = input("Choose your biome to annex > ")
 # cp Need to change strings to display appropriately based on the README
     if choice == "1":
@@ -24,9 +25,20 @@ def annex_biome(Arboretum):
         Arboretum.rivers.append(river)
     elif choice == "2":
         swamp = Swamp()
-        arboretum.swamps.append(swamp)
+        Arboretum.swamps.append(swamp)
     elif choice == "3":
         coastline = Coastline()
-        arboretum.coastline.append(coastline)
+        Arboretum.coastlines.append(coastline)
+    elif choice == "4":
+        grassland = Grassland()
+        Arboretum.grasslands.append(grassland)
+    elif choice == "5":
+        mountain = Mountain()
+        Arboretum.mountains.append(mountain)
+    elif choice == "6":
+        forest = Forest()
+        Arboretum.forests.append(forest)
+    else choice == "7":
+        main_menu(keahua)
 # cp Need to add functionality for append options
 # cp Need to create files and classes for all missing biomes
