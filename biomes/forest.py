@@ -6,7 +6,10 @@ from interfaces.animals.terrestrial import IsTerrestrial
 
 class Forest(IContainsAnimals, IContainsPlants, Identifiable):
 
-    def __init__(self):
+    def __init__(self, name, max_plants, max_animals):
+        self.name = name
+        self.max_plants = max_plants
+        self.max_animals = max_animals
         IContainsAnimals.__init__(self)
         IContainsPlants.__init__(self)
         Identifiable.__init__(self)
@@ -26,3 +29,8 @@ class Forest(IContainsAnimals, IContainsPlants, Identifiable):
         self.plants.append(plant)
         # except AttributeError:
         #     raise AttributeError("Cannot add saltwater plants to a forest.")
+
+
+
+
+
