@@ -1,8 +1,10 @@
+import os
 from animals import RiverDolphin
+from interfaces.animals.grasslandy import Grasslandy
 
 def release_animal(arboretum):
     animal = None
-
+    os.system('cls' if os.name == 'nt' else 'clear')
     print("1. Gold Dust Day Gecko")
     print("2. River Dolphin")
     print("3. Nene Goose")
