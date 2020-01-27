@@ -4,7 +4,7 @@ sys.path.append('../')
 from interfaces import Identifiable
 from interfaces import IContainsAnimals
 from interfaces import IContainsPlants
-# from animals.
+from animals.river_dolphin import RiverDolphin
 
 # from environments.environment import Environment
 
@@ -39,3 +39,7 @@ class Swamp(IContainsAnimals, IContainsPlants, Identifiable):
 
     # def __str__(self):
     #     return self.name
+    
+Swamptopia = Swamp()
+dolphin = RiverDolphin()
+Swamptopia.add_animal(dolphin)
