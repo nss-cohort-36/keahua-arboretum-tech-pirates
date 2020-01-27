@@ -3,10 +3,7 @@ import sys
 sys.path.append('../')
 from arboretum import Arboretum
 from biomes import River
-<<<<<<< HEAD
-=======
 from arboretum import Arboretum
->>>>>>> master
 from biomes import Swamp
 #add imports for rest of biomes
 
