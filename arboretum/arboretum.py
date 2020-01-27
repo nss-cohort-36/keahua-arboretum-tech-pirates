@@ -5,30 +5,25 @@ class Arboretum:
         self.name = name
         self.address = address
         # 6 Plants 6 Animals
-        self.rivers = []
+        self.__rivers = []
         # 15 Plants 22 Animals
         self.grasslands = []
         # Jb Personal Comments: Code so I can play and attempt to write some for my feeding project. NOT cowboying will Commment this out and will explain if asked. will delete off branch and move to different personal Branch if necessary.
         # 4 Plants 6 Animals
-        self.mountains = []
-        # 32 plants 20 Animals
+        self.__mountains = []  
         self.forests = []
         # 12 Plants 8 Animals
         self.swamps = []
         # 3 Plants 15 Animals
         self.coastlines = []
 
+    @property
+    def rivers(self):
+        return self.__rivers
 
-# FROM README
-# class Arboretum:
+    @property
+    def mountains(self):
+        return self.__mountains
+    
 
-#     def __init__(self):
-#         self.__rivers = []
-
-#     @property
-#     def rivers(self):
-#         return self.__rivers
-
-#     def annex_river(self, river):
-#         self.__rivers.append(river)
 # cp Need to create attributes for all missing biomes
