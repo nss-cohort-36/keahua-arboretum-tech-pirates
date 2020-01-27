@@ -34,12 +34,3 @@ class Swamp(IContainsAnimals, IContainsPlants, Identifiable):
                 self.plants.append(plant)
         except AttributeError:
             raise AttributeError("Cannot add plants that require brackish water or currents to a swamp biome")
-
-    # def __str__(self):
-    #     return self.name
-    
-Swamptopia = Swamp()
-dolphin = RiverDolphin()
-Swamptopia.add_animal(dolphin)
-
-print(Swamptopia.animals)
