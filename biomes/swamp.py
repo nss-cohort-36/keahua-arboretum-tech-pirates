@@ -1,18 +1,20 @@
+#********************************************************************************************************************
+# This file defines the Swamp class  
+#********************************************************************************************************************
+
 import sys
 sys.path.append('../')
 # from interfaces.habitats import IsStagnant
 from interfaces import Identifiable
 from interfaces import IContainsAnimals
 from interfaces import IContainsPlants
-# from animals.
-
-# from environments.environment import Environment
+from animals.river_dolphin import RiverDolphin
 
 
-class Swamp(IContainsAnimals, IContainsPlants, Identifiable):
+class Swamp(IContainsAnimals, IContainsPlants, Identifiable): # <-- creates def of River class which is a derivitive class of 3 parent classes
 
     def __init__(self):
-        # self.name = name
+        self.name = "Swamp"
         IContainsAnimals.__init__(self)
         IContainsPlants.__init__(self)
         Identifiable.__init__(self)
@@ -36,6 +38,3 @@ class Swamp(IContainsAnimals, IContainsPlants, Identifiable):
                 self.plants.append(plant)
         except AttributeError:
             raise AttributeError("Cannot add plants that require brackish water or currents to a swamp biome")
-
-    # def __str__(self):
-    #     return self.name
