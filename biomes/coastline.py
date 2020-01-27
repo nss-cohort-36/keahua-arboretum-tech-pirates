@@ -1,8 +1,8 @@
 from arboretum import Arboretum
 from interfaces.animals.aquatic import IsAquatic
 from interfaces.identifiable import Identifiable
-from interfaces.habitat.contains_animals import IContainsAnimals
-from interfaces.habitat.contains_plants import IContainsPlants
+from interfaces.habitats.contains_animals import IContainsAnimals
+from interfaces.habitats.contains_plants import IContainsPlants
 
 class Coastline(Arboretum, Identifiable, IContainsAnimals, IContainsPlants):
 
