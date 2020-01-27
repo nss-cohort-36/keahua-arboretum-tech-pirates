@@ -6,13 +6,11 @@ from interfaces import IContainsAnimals
 from interfaces import IContainsPlants
 from animals.river_dolphin import RiverDolphin
 
-# from environments.environment import Environment
-
 
 class Swamp(IContainsAnimals, IContainsPlants, Identifiable):
 
     def __init__(self):
-        self.name = Swamp
+        self.name = "Swamp"
         IContainsAnimals.__init__(self)
         IContainsPlants.__init__(self)
         Identifiable.__init__(self)
@@ -43,3 +41,5 @@ class Swamp(IContainsAnimals, IContainsPlants, Identifiable):
 Swamptopia = Swamp()
 dolphin = RiverDolphin()
 Swamptopia.add_animal(dolphin)
+
+print(Swamptopia.animals)
