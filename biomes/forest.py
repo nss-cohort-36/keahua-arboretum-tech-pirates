@@ -22,5 +22,3 @@ class Forest(IContainsAnimals, IContainsPlants, Identifiable):
 
     def add_plant(self, plant):
         self.plants.append(plant)
-
-Riverwood = Forest("Riverwood", 10, 15)
