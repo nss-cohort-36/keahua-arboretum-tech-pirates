@@ -1,3 +1,7 @@
+#****************************************************************************
+# This file defines a specific action for an animal to inherit
+#****************************************************************************
+
 class IsFlying:
 
     def __init__(self, wing_count=2):
