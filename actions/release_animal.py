@@ -16,10 +16,11 @@ def release_animal(arboretum):
     choice = input("Choose animal to release > ")
 
     if choice == "1":
-        # animal = RiverDolphin()
+        # animal_to_release = 
         pass
 
     if choice == "2":
+        animal_to_release = RiverDolphin()
         pass
     if choice == "3":
         pass
@@ -62,8 +63,9 @@ def release_animal(arboretum):
     
     choice = input("Release the animal into which biome? >")
 
+    
     if choice == "3":
-        Coastline.add_animal(animal)
+        Coastline.add_animal(animal_to_release)
 
     arboretum.rivers[int(choice) - 1].animals.append(animal)
 
