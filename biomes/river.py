@@ -1,3 +1,7 @@
+#********************************************************************************************************************
+# This file defines the River class  
+#********************************************************************************************************************
+
 from interfaces import IsAquatic
 from interfaces import Identifiable
 from interfaces import IContainsAnimals
@@ -5,14 +9,17 @@ from interfaces import IContainsPlants
 # from animals import RiverDolphin
 
 
-class River(IContainsAnimals, IContainsPlants, Identifiable):
+class River(IContainsAnimals, IContainsPlants, Identifiable): # <-- creates def of River class which is a derivitive class of 3 parent classes
 
-    def __init__(self):
+    def __init__(self): # the 3 lines below give River access to the __init__'s in the parent files
+        self.name = "River"
         IContainsAnimals.__init__(self)
         IContainsPlants.__init__(self)
         Identifiable.__init__(self)
+        self.max_animals = 12
+        self.max_plants = 6
 
-    def add_animal(self, animal):
+    def add_animal(self, animal): # <-- this is a function that can be executed once a River class has been instantiated
         try:
             if animal.aquatic and animal.cell_type == "hypotonic":
                 self.animals.append(animal)

@@ -1,3 +1,8 @@
+#********************************************************************************************************************
+# This file is the overall package __init__ for interfaces
+#********************************************************************************************************************
+
+
 from .animals.terrestrial import IsTerrestrial
 from .animals.freshwater import IsFreshwater
 from interfaces.animals.aquatic import IsAquatic

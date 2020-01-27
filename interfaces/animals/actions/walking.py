@@ -1,3 +1,7 @@
+#****************************************************************************
+# This file defines a specific action for an animal to inherit
+#****************************************************************************
+
 class IsWalking:
 
     def __init__(self, leg_count=2):
