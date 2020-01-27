@@ -1,6 +1,10 @@
 # import sys
 # sys.path.append('../')
+<<<<<<< HEAD
 from interfaces.habitats import IsStagnant
+=======
+# from interfaces.habitats import IsStagnant
+>>>>>>> master
 from interfaces import Identifiable
 from interfaces import IContainsAnimals
 from interfaces import IContainsPlants
@@ -29,7 +33,12 @@ class Swamp(IContainsAnimals, IContainsPlants, Identifiable):
 
     def add_plant(self, plant):
         try:
+<<<<<<< HEAD
             if plant.freshwater and plant.is_stagnant:
+=======
+            if plant.freshwater :
+            # and plant.is_stagnant 
+>>>>>>> master
                 self.plants.append(plant)
         except AttributeError:
             raise AttributeError("Cannot add plants that require brackish water or currents to a swamp biome")
