@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 from interfaces import Identifiable
 from interfaces import IContainsAnimals
 from interfaces import IContainsPlants
