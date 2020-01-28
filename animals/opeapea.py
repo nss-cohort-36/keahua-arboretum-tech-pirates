@@ -7,7 +7,7 @@ class Opeapea(Animal, IsFlying, Identifiable):
         Animal.__init__(self, "Ope'ape'a")
         IsFlying.__init__(self)
         Identifiable.__init__(self)
-        self.__prey = { "Insects", "Vegetation" }
+        self.__prey = { "Centipedes", "Cockroaches", "Assassin Bug", "Golden Tortoise Beetle", "Dobsonflies", "The Eastern Velvet Ant (Cow-Killer)", "Candlenut", "Pineapple", "Breadfruit", "Edible Canna", "Seagrape", "Papaya", "Coconut" }
 
     @property
     def prey(self):

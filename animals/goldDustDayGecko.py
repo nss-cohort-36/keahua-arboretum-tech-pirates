@@ -7,7 +7,7 @@ class Gold_Dust_Day_Gecko(Animal, IsTerrestrial, Identifiable):
         Animal.__init__(self, "Gold Dust Day Gecko")
         IsTerrestrial.__init__(self)
         Identifiable.__init__(self)
-        self.__prey = { "Insects" }
+        self.__prey = { "Centipedes", "Cockroaches", "Assassin Bug", "Golden Tortoise Beetle", "Dobsonflies", "The Eastern Velvet Ant (Cow-Killer)" }
 
     @property
     def prey(self):

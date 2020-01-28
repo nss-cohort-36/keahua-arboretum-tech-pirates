@@ -7,7 +7,7 @@ class Kīkākapu(Animal, IsFreshwater, Identifiable):
         Animal.__init__(self, "Nene Goose")
         IsFreshwater.__init__(self)
         Identifiable.__init__(self)
-        self.__prey = { "Vegetation" }
+        self.__prey = { "Yellow Fin Tuna", "Mahi-Mahi", "Marlin", "Wahoo", "Ono", "Hapu'upu'u", "Kajiki", "Opakapaku", "Monchong" }
 
     @property
     def prey(self):

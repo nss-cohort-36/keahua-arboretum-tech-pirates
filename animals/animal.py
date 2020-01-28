@@ -1,9 +1,15 @@
 class Animal:
 
-    def __init__(self, species):
+    def __init__(self, species, name, age):
         self.species = species
+        self.name = name
         self.age = 0
-        self.__prey = prey
+       
 
     def move(self, propulsion, speed):
         return f"{self. species} moves at {speed} meters/sec by {propulsion}"
+
+
+@property
+def prey(self):
+    return self.__food
