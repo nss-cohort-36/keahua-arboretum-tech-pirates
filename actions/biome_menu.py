@@ -8,7 +8,7 @@ def biome_menu(arboretum):
     for index, river in enumerate(arboretum.rivers):
         print(f'{index + 1}. River {river.id}')
 
-    for index, coastline in enumerate(arboretum.coastlines):        print(f'{index + 2}. Coastline {coastline.id}')
+    for index, coastline in enumerate(arboretum.coastlines):             print(f'{index + 2}. Coastline {coastline.id}')
 
     for index, mountain in enumerate(arboretum.mountains):
         print(f'{index + 3}. Mountain {mountain.id}')
