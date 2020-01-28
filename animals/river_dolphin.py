@@ -1,4 +1,4 @@
-from animals import Animal
+from animals.animal import Animal
 from interfaces.animals import IsFreshwater
 from interfaces import Identifiable
 

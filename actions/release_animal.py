@@ -40,7 +40,7 @@ def release_animal(arboretum):
     biome_menu(arboretum)
 
     if choice == "1":
-        River.add_animal(animal)
+        River.add_animal()
         print('Dolphin was added to River')
     
 
