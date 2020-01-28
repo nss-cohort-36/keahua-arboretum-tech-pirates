@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 from animals import Animal
 from interfaces import Identifiable
 from interfaces import IsFlying
@@ -21,3 +23,9 @@ class Opeapea(Animal, IsFlying, Identifiable):
     
     def __str__(self):
         return f'Opeapea {self.id}.'
+
+
+bob = Opeapea()
+
+bob.feed("Insects")
+
