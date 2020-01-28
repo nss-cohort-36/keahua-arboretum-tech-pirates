@@ -12,4 +12,7 @@ class Coastline(Arboretum, Identifiable, IContainsAnimals, IContainsPlants):
         IContainsPlants.__init__(self)
 
     def add_animal(self):
-        self.animals.append(animal)
+        super().animals.append(animal)
+
+    def add_plant(self, plant):
+        super().plants.append(plant)
