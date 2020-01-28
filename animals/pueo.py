@@ -8,7 +8,7 @@ class Pueo(Animal, IsTerrestrial, IsFlying, Identifiable):
         Animal.__init__(self, "Pueo")
         IsTerrestrial.__init__(self)
         Identifiable.__init__(self)
-        self.__prey = { "Rodents" }
+        self.__prey = { "House Mouse", "Black Rat", "Polynesian Rat", "Mickey Mouse", "Ratatouille" }
 
     @property
     def prey(self):

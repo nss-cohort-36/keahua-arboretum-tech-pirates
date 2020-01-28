@@ -16,4 +16,6 @@ class Mountain(IContainsAnimals, IContainsPlants, Identifiable):
         super().plants.append(plant)
 
     def __str__(self):
-        return f'{self.name} Mountain.'
+        return f'Mountain.'
+
+  

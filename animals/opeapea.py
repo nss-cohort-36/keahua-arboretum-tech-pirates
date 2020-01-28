@@ -1,3 +1,5 @@
+import sys
+sys.path.append('../')
 from animals import Animal
 from interfaces import Identifiable
 from interfaces import IsFlying
@@ -7,7 +9,7 @@ class Opeapea(Animal, IsFlying, Identifiable):
         Animal.__init__(self, "Ope'ape'a")
         IsFlying.__init__(self)
         Identifiable.__init__(self)
-        self.__prey = { "Insects", "Vegetation" }
+        self.__prey = { "Centipedes", "Cockroaches", "Assassin Bug", "Golden Tortoise Beetle", "Dobsonflies", "The Eastern Velvet Ant (Cow-Killer)", "Candlenut", "Pineapple", "Breadfruit", "Edible Canna", "Seagrape", "Papaya", "Coconut" }
 
     @property
     def prey(self):
@@ -21,3 +23,9 @@ class Opeapea(Animal, IsFlying, Identifiable):
     
     def __str__(self):
         return f'Opeapea {self.id}.'
+
+
+bob = Opeapea()
+
+bob.feed("Insects")
+
