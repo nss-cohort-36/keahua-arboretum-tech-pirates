@@ -27,7 +27,7 @@ class Swamp(IContainsAnimals, IContainsPlants, Identifiable): # <-- creates def 
     def add_animal(self, animal):
         try:
             if animal.aquatic and animal.cell_type == "hypotonic":
-                self.animals.append(animal)
+                super().animals.append(animal)
         except AttributeError:
             raise AttributeError("Cannot add non-aquatic or saltwater animals to a swamp")
 
@@ -35,6 +35,6 @@ class Swamp(IContainsAnimals, IContainsPlants, Identifiable): # <-- creates def 
         try:
             if plant.freshwater :
             # and plant.is_stagnant 
-                self.plants.append(plant)
+                super().plants.append(plant)
         except AttributeError:
             raise AttributeError("Cannot add plants that require brackish water or currents to a swamp biome")

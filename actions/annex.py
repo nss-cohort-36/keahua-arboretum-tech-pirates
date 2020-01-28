@@ -12,7 +12,7 @@ from biomes import Mountain
 #add imports for rest of biomes
 
 # cp Need to add proper imports
-def annex_biome(Arboretum):
+def annex_biome(arboretum):
     os.system('clear' if os.name == 'nt' else 'clear')
     print("1. River")
     print("2. Swamp")
@@ -31,16 +31,16 @@ def annex_biome(Arboretum):
         Arboretum.swamps.append(swamp)
     if choice == "3":
         coastline = Coastline()
-        Arboretum.coastlines.append(coastline)
+        arboretum.coastlines.append(coastline)
     if choice == "4":
         grassland = Grassland()
-        Arboretum.grasslands.append(grassland)
+        arboretum.grasslands.append(grassland)
     if choice == "5":
         mountain = Mountain()
-        Arboretum.mountains.append(mountain)
+        arboretum.mountains.append(mountain)
     if choice == "6":
         forest = Forest()
-        Arboretum.forests.append(forest)
+        arboretum.forests.append(forest)
     # if choice == "7":
     #     main_menu(keahua)
 # cp Need to add functionality for append options
