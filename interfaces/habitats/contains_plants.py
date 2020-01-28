@@ -2,7 +2,7 @@
 # This file is creating a container to host a list for plants
 #********************************************************************************************************************
 
-class IContainsPlants():
+class IContainsPlants:
 
     def __init__(self):
         self.plants = []

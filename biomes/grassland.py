@@ -10,7 +10,7 @@ class Grassland(IContainsAnimals, IContainsPlants, Identifiable):
         Identifiable.__init__(self)
         
     def add_animal(self, animal):
-        self.animals.append(animal)
+        super().animals.append(animal)
         
     def add_plant(self, plant):
-        self.plants.append(plant)
+        super().plants.append(plant)
