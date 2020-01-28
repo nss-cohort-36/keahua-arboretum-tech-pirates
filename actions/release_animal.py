@@ -1,9 +1,11 @@
-from animals import RiverDolphin
+from animals.river_dolphin import RiverDolphin
 from biomes.coastline import Coastline
 from actions.biome_menu import biome_menu
+import os
 
 def release_animal(arboretum):
     animal = None
+    os.system('clear' if os.name == 'nt' else 'clear')
 
     print("1. Gold Dust Day Gecko")
     print("2. River Dolphin")
@@ -21,8 +23,7 @@ def release_animal(arboretum):
         pass
 
     if choice == "2":
-        animal_to_release = RiverDolphin()
-        pass
+        animal = RiverDolphin()
     if choice == "3":
         pass
     if choice == "4":
@@ -38,7 +39,9 @@ def release_animal(arboretum):
 
     biome_menu(arboretum)
 
-
+    if choice == "1":
+        River.add_animal(animal)
+        print('Dolphin was added to River')
     
 
 
