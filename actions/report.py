@@ -8,7 +8,7 @@ def build_facility_report(arboretum):
     # write logic for "if river is empty, then print(River: No river biomes currently in arboretum)"
     for river in arboretum.rivers:
         print(f'River [{river.id}]')
-        print(f'{River.animals}')
+        print(f'{river.animals}')
     
     # for mountain
     for mountain in arboretum.mountains:
