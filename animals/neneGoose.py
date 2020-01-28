@@ -9,7 +9,7 @@ class Nene_Goose(Animal, IsFlying, Identifiable):
         IsFlying.__init__(self)
         IsTerrestrial.__init__(self)
         Identifiable.__init__(self)
-        self.__prey = { "Vegetation" }
+        self.__prey = { "Candlenut", "Pineapple", "Breadfruit", "Edible Canna", "Seagrape", "Papaya", "Coconut" }
 
     @property
     def prey(self):
