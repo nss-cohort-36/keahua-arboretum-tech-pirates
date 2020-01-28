@@ -10,6 +10,6 @@ class Mountain(IContainsAnimals, IContainsPlants, Identifiable):
         Identifiable.__init__(self)
     
     def __str__(self):
-        return f'{self.name} Mountain.'
+        return f'Mountain.'
 
   
