@@ -13,16 +13,16 @@ class Arboretum:
         # 6 Plants 6 Animals
         self.__rivers = []
         # 15 Plants 22 Animals
-        self.grasslands = []
+        self.__grasslands = []
         # Jb Personal Comments: Code so I can play and attempt to write some for my feeding project. NOT cowboying will Commment this out and will explain if asked. will delete off branch and move to different personal Branch if necessary.
         # 4 Plants 6 Animals
         self.__mountains = []
 
-        self.forests = []
+        self.__forests = []
         # 12 Plants 8 Animals
-        self.swamps = []
+        self.__swamps = []
         # 3 Plants 15 Animals
-        self.coastlines = []
+        self.__coastlines = []
 
     @property
     def rivers(self):
@@ -32,5 +32,18 @@ class Arboretum:
     def mountains(self):
         return self.__mountains
 
+    @property
+    def grasslands(self):
+        return self.__grasslands
 
-# cp Need to create attributes for all missing biomes
+    @property
+    def forests(self):
+        return self.__forests
+
+    @property
+    def swamps(self):
+        return self.__swamps
+
+    @property
+    def coastlines(self):
+        return self.__coastlines
