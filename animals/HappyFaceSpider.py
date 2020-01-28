@@ -21,3 +21,6 @@ class Hawaiian_Happy_Face_Spider(Animal, IsTerrestrial, Identifiable):
     
     def __str__(self):
         return f'Hawaiian Happy-Face Spider {self.id}.'
+
+
+
