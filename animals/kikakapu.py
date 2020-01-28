@@ -2,7 +2,7 @@ from interfaces.animals import IsFreshwater
 from animals import Animal
 from interfaces import Identifiable
 
-class Kīkākapu(Animal, IsFreshwater, Identifiable):
+class Kikakapu(Animal, IsFreshwater, Identifiable):
     def __init__(self):
         Animal.__init__(self, "Nene Goose")
         IsFreshwater.__init__(self)

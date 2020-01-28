@@ -1,7 +1,7 @@
 from animals.river_dolphin import RiverDolphin
 from animals.neneGoose import Nene_Goose
 from animals.goldDustDayGecko import Gold_Dust_Day_Gecko
-from animals.kīkākapu import Kīkākapu
+from animals.kikakapu import Kikakapu
 from animals.pueo import Pueo
 from animals.ulae import Ulae
 from animals.opeapea import Opeapea
@@ -14,7 +14,7 @@ def release_animal(arboretum):
     print("1. Gold Dust Day Gecko")
     print("2. River Dolphin")
     print("3. Nene Goose")
-    print("4. KiKakapu")
+    print("4. Kikakapu")
     print("5. Pueo")
     print("6. 'Ulae")
     print("7. Ope'ape'a")
@@ -29,7 +29,7 @@ def release_animal(arboretum):
     if choice == "3":
         animal = Nene_Goose()
     if choice == "4":
-        animal = Kīkākapu()
+        animal = Kikakapu()
     if choice == "5":
         animal = Pueo()
     if choice == "6":
