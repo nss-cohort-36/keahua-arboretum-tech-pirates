@@ -8,7 +8,7 @@ rodents = ["House Mouse", "Black Rat", "Polynesian Rat", "Mickey Mouse", "Ratato
 
 fish = ["Yellow Fin Tuna", "Mahi-Mahi", "Marlin", "Wahoo", "Ono", "Hapu'upu'u", "Kajiki", "Opakapaku", "Monchong"]
 
-insects = ["centipedes", "cockroaches", "Assassin Bug", "Golden Tortoise Beetle", "Dobsonflies", "The Eastern Velvet Ant (Cow-Killer)"]
+insects = ["Centipedes", "Cockroaches", "Assassin Bug", "Golden Tortoise Beetle", "Dobsonflies", "The Eastern Velvet Ant (Cow-Killer)"]
 
 vegetation = ["Candlenut", "Pineapple", "Breadfruit", "Edible Canna", "Seagrape", "Papaya", "Coconut"]
 
