@@ -4,7 +4,7 @@
 
 from interfaces import IsAquatic
 from interfaces import Identifiable
-from interfaces import IContainsAnimals
+from interfaces.habitats.contains_animals import IContainsAnimals
 from interfaces import IContainsPlants
 # from animals import RiverDolphin
 
