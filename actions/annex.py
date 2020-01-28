@@ -2,12 +2,12 @@ import os
 import sys
 sys.path.append('../')
 from arboretum import Arboretum
-from biomes.river import River
-from biomes.swamp import Swamp
-from biomes.coastline import Coastline
-from biomes.grassland import Grassland
-from biomes.forest import Forest
-from biomes.mountain import Mountain
+from biomes import River
+from biomes import Swamp
+from biomes import Coastline
+from biomes import Grassland
+from biomes import Forest
+from biomes import Mountain
 # from index import main_menu
 #add imports for rest of biomes
 
