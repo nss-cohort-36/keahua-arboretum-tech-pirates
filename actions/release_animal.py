@@ -1,11 +1,22 @@
+<<<<<<< HEAD
 import os
 from animals import RiverDolphin
 from interfaces.animals.grasslandy import Grasslandy
+=======
+from animals.river_dolphin import RiverDolphin
+>>>>>>> master
 from biomes.coastline import Coastline
+from actions.biome_menu import biome_menu
+import os
 
 def release_animal(arboretum):
     animal = None
+<<<<<<< HEAD
     os.system('cls' if os.name == 'nt' else 'clear')
+=======
+    os.system('clear' if os.name == 'nt' else 'clear')
+
+>>>>>>> master
     print("1. Gold Dust Day Gecko")
     print("2. River Dolphin")
     print("3. Nene Goose")
@@ -22,7 +33,10 @@ def release_animal(arboretum):
 
     if choice == "2":
         animal = RiverDolphin()
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
     if choice == "3":
         animal = NeneGoose()
 
@@ -38,45 +52,21 @@ def release_animal(arboretum):
     if choice == "7":
         animal = Opeapea()
 
+<<<<<<< HEAD
     if choice == "8":
         animal = HappySpider()
         
     else:
         input(" That sucked try again! ")
         return
+=======
+    biome_menu(arboretum)
+>>>>>>> master
 
-    for index, river in enumerate(arboretum.rivers):
-        print(f'Rivers:')
-        print(f'{index + 1}. River {river.id}')
-
-    for index, coastline in enumerate(arboretum.coastlines):
-        print(f'Coastlines:')
-        print(f'{index + 1}. Coastline {coastline.id}')
+    if choice == "1":
+        River.add_animal()
+        print('Dolphin was added to River')
     
-    for index, mountain in enumerate(arboretum.mountains):
-        print(f'Mountains:')
-        print(f'{index + 1}. Mountain {mountain.id}')
-
-    for index, grassland in enumerate(arboretum.grasslands):
-        print(f'Grasslands:')
-        print(f'{index + 1}. Grassland {grassland.id}')
-
-    for index, swamp in enumerate(arboretum.swamps):
-        print(f'Swamps:')
-        print(f'{index + 1}. Swamp {swamp.id}')
-
-    for index, forest in enumerate(arboretum.forests):
-        print(f'Forests:')
-        print(f'{index + 1}. Forest {forest.id}')
-
-    
-    choice = input("Release the animal into which biome? >")
-
-    
-    if choice == "3":
-        Coastline.add_animal(animal_to_release)
-
-    arboretum.rivers[int(choice) - 1].animals.append(animal)
 
 
 # *******************************
