@@ -22,13 +22,13 @@ class River(IContainsAnimals, IContainsPlants, Identifiable): # <-- creates def 
     def add_animal(self, animal): # <-- this is a function that can be executed once a River class has been instantiated
         try:
             if animal.aquatic and animal.cell_type == "hypotonic":
-                self.animals.append(animal)
+                super().animals.append(animal)
         except AttributeError:
             raise AttributeError("Cannot add non-aquatic, or saltwater animals to a river")
 # Missing Logic for conditonals to complete functionality noice
     def add_plant(self, plant):
         try:
             if plant.freshwater and plant.requires_current:
-                self.plants.append(plant)
+                super().plants.append(plant)
         except AttributeError:
             raise AttributeError("Cannot add plants that require brackish water or stagnant water to a river biome")
