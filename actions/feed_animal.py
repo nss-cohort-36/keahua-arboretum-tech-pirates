@@ -1,5 +1,7 @@
 # Jb-Comment: Imports Go up TOP!!!
-from animals.preyCritters.critter_vittles import CritterVittles
+import sys
+sys.path.append('../')
+from animals.preyCritters import critter_vittles
 from animals.river_dolphin import RiverDolphin
 import os
 # Define Calls for Each animal
@@ -47,6 +49,41 @@ def animal_to_feed_menu(arboretum):
             count += 1
             print(f'     {count}. {animal.species} [{str(animal.id)[0:8]}]')
     
+    for swamp in arboretum.swamps:
+        print(f'Swamp [{str(swamp.id)[0:8]}]')
+        for animal in swamp.animals:
+            animal_list.append(animal)
+            count += 1
+            print(f'    {count}. {animal.species} [{str(animal.id)[0:8]}]')
+
+    for mountain in arboretum.mountains:
+        print(f'Mountain [{str(mountain.id)[0:8]}]')
+        for animal in mountain.animals:
+            animal_list.append(animal)
+            count += 1
+            print(f'    {count}. {animal.species} [{str(animal.id)[0:8]}]')
+
+    for grassland in arboretum.grasslands:
+        print(f'Grassland [{str(grassland.id)[0:8]}]')
+        for animal in grassland.animals:
+            animal_list.append(animal)
+            count += 1
+            print(f'    {count}. {animal.species} [{str(animal.id)[0:8]}]')
+
+    for coastline in arboretum.coastlines:
+        print(f'Coastline [{str(coastline.id)[0:8]}]')
+        for animal in coastline.animals:
+            animal_list.append(animal)
+            count += 1
+            print(f'    {count}. {animal.species} [{str(animal.id)[0:8]}]')
+
+    for forest in arboretum.forests:
+        print(f'Forest [{str(forest.id)[0:8]}]')
+        for animal in forest.animals:
+            animal_list.append(animal)
+            count += 1
+            print(f'    {count}. {animal.species} [{str(animal.id)[0:8]}]')
+    
     # If conditional for testing
     if animal_list == []:
         input(
@@ -72,9 +109,11 @@ def animal_to_feed_menu(arboretum):
     choice = input("> ")
     
     try:
-        if int(choice) > lent(food_list):    
-        input(" That value exceeds or falls short of your options. Select an appropriate value please.")
-        return
+        
+        if int(choice) > lent(food_list):
+            input("Bad")
+            return
+    
     except ValueError:
         input("Does not Compute Try again.")
         return
