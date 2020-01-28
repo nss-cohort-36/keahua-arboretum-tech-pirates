@@ -1,5 +1,6 @@
 import os
 from biomes.river import River
+from biomes.coastline import Coastline
 
 def build_facility_report(arboretum):
     os.system('clear' if os.name == 'nt' else 'clear')
@@ -8,7 +9,8 @@ def build_facility_report(arboretum):
     # write logic for "if river is empty, then print(River: No river biomes currently in arboretum)"
     for river in arboretum.rivers:
         print(f'River [{river.id}]')
-        print(f'{river.animals}')
+        for animal in river.animals:
+            print(f'{river.animal}')
     
     # for mountain
     for mountain in arboretum.mountains:

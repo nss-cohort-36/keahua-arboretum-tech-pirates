@@ -1,5 +1,11 @@
 from animals.river_dolphin import RiverDolphin
-from biomes.coastline import Coastline
+from animals.neneGoose import Nene_Goose
+from animals.goldDustDayGecko import Gold_Dust_Day_Gecko
+from animals.kīkākapu import Kīkākapu
+from animals.pueo import Pueo
+from animals.ulae import Ulae
+from animals.opeapea import Opeapea
+from animals.HappyFaceSpider import Hawaiian_Happy_Face_Spider
 from actions.biome_menu import biome_menu
 import os
 
@@ -19,29 +25,28 @@ def release_animal(arboretum):
     choice = input("Choose animal to release > ")
 
     if choice == "1":
-        # animal_to_release = 
-        pass
-
+        animal = Gold_Dust_Day_Gecko()
     if choice == "2":
         animal = RiverDolphin()
     if choice == "3":
-        pass
+        animal = Nene_Goose()
     if choice == "4":
-        pass
+        animal = Kīkākapu()
     if choice == "5":
-        pass
+        animal = Pueo()
     if choice == "6":
-        pass
+        animal = Ulae()
     if choice == "7":
-        pass
+        animal = Opeapea()
     if choice == "8":
-        pass
+        animal = Hawaiian_Happy_Face_Spider()
 
     biome_menu(arboretum)
 
+    choice = input("Release the animal into which biome? >")
+
     if choice == "1":
         River.add_animal()
-        print('Dolphin was added to River')
     
 
 

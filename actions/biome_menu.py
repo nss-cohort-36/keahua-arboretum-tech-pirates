@@ -8,7 +8,7 @@ def biome_menu(arboretum):
     for index, river in enumerate(arboretum.rivers):
         print(f'{index + 1}. River {river.id}')
 
-    for index, coastline in enumerate(arboretum.coastlines):        print(f'{index + 2}. Coastline {coastline.id}')
+    for index, coastline in enumerate(arboretum.coastlines):             print(f'{index + 2}. Coastline {coastline.id}')
 
     for index, mountain in enumerate(arboretum.mountains):
         print(f'{index + 3}. Mountain {mountain.id}')
@@ -22,4 +22,4 @@ def biome_menu(arboretum):
     for index, forest in enumerate(arboretum.forests):
         print(f'{index + 6}. Forest {forest.id}')
 
-    choice = input("Release the animal into which biome? >")
+    
