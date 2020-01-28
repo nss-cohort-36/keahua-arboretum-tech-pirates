@@ -54,8 +54,32 @@ def animal_to_feed_menu(arboretum):
         )
         return
     
+    print("Select an animal to feed.")
+    choice = input("> ")
+    
     if int(choice) > len(animal_list):
         input(' You chose poorly..... Look out for crusaders with funny cups.')
         return
     
-    animal = animal_list[int(choice)]
+    animal = animal_list[int(choice) - 1]
+    
+    food_list = list(CritterVittles)
+        
+    for index, food in enumerate(food_list):
+        print(f'{index + 1}. {food}')
+        
+    print("What are you feedint this critter?")
+    choice = input("> ")
+    
+    try:
+        if int(choice) > lent(food_list):    
+        input(" That value exceeds or falls short of your options. Select an appropriate value please.")
+        return
+    except ValueError:
+        input("Does not Compute Try again.")
+        return
+    
+    print(
+        f'The {animal.species} ate a {food_list[int(choice) - 1]} for a nutritious snack'
+    )
+    choice = input('> ')
