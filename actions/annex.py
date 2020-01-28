@@ -25,10 +25,10 @@ def annex_biome(arboretum):
 # cp Need to change strings to display appropriately based on the README
     if choice == "1":
         river = River()
-        Arboretum.rivers.append(river)
+        arboretum.rivers.append(river)
     if choice == "2":
         swamp = Swamp()
-        Arboretum.swamps.append(swamp)
+        arboretum.swamps.append(swamp)
     if choice == "3":
         coastline = Coastline()
         arboretum.coastlines.append(coastline)
