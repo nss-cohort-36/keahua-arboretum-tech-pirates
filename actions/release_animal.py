@@ -1,22 +1,12 @@
-<<<<<<< HEAD
 import os
 from animals import RiverDolphin
 from interfaces.animals.grasslandy import Grasslandy
-=======
-from animals.river_dolphin import RiverDolphin
->>>>>>> master
 from biomes.coastline import Coastline
 from actions.biome_menu import biome_menu
-import os
 
 def release_animal(arboretum):
     animal = None
-<<<<<<< HEAD
     os.system('cls' if os.name == 'nt' else 'clear')
-=======
-    os.system('clear' if os.name == 'nt' else 'clear')
-
->>>>>>> master
     print("1. Gold Dust Day Gecko")
     print("2. River Dolphin")
     print("3. Nene Goose")
@@ -33,10 +23,6 @@ def release_animal(arboretum):
 
     if choice == "2":
         animal = RiverDolphin()
-<<<<<<< HEAD
-
-=======
->>>>>>> master
     if choice == "3":
         animal = NeneGoose()
 
@@ -52,16 +38,12 @@ def release_animal(arboretum):
     if choice == "7":
         animal = Opeapea()
 
-<<<<<<< HEAD
     if choice == "8":
         animal = HappySpider()
         
     else:
         input(" That sucked try again! ")
         return
-=======
-    biome_menu(arboretum)
->>>>>>> master
 
     if choice == "1":
         River.add_animal()
