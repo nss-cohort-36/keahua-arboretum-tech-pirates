@@ -23,4 +23,4 @@ def biome_menu(arboretum):
     for index, forest in enumerate(arboretum.forests):
         print(f'{index + 6}. Forest {forest.id}')
 
-    choice = input("Release the animal into which biome? >")
+    
