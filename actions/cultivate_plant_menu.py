@@ -1,6 +1,12 @@
 # Author: caroline brownlee
 
 import os
+import sys
+sys.path.append('../')
+from plants import Blue_Jade_Vine
+from plants import Mountain_Apple_Tree
+from plants import RainbowTree
+from plants import Silversword
 # from index import main_menu
 
 def cultivate_plant_menu(arboretum):
