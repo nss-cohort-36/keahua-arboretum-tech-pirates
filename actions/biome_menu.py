@@ -17,6 +17,9 @@ def biome_menu(arboretum):
         print({index + 1}, biome)
     
     choice = input("Choose a biome type for your plant > ")
+
+    if choice == "1":
+        print()
     
     # capture user input
     # use index position
