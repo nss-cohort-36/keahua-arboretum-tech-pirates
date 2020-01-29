@@ -7,7 +7,7 @@ from animals.pueo import Pueo
 from animals.ulae import Ulae
 from animals.opeapea import Opeapea
 from animals.HappyFaceSpider import Hawaiian_Happy_Face_Spider
-from actions.biome_menu import animal_biome_menu
+from actions.animal_biome_menu import animal_biome_menu
 
 def release_animal(arboretum):
     animal = None
