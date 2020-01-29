@@ -10,25 +10,25 @@ def build_facility_report(arboretum):
     for river in arboretum.biomes["Rivers"]:
         print(f'River [{river.id}]')
         for animal in river.animals:
-            print(f'{river.animal}')
+            print(f'{animal.species}')
         for plant in river.plants:
-            print(f'{river.plant}')
+            print(f'{plant.species}')
     
     # for mountain
     for mountain in arboretum.biomes["Mountains"]:
         print(f'Mountain [{mountain.id}]')
         for animal in mountain.animals:
-            print(f'{mountain.animal}')
+            print(f'{animal.species}')
         for plant in mountain.plants:
-            print(f'{mountain.plant}')
+            print(f'{plant.species}')
     
     # for grassland
     for grassland in arboretum.biomes["Grasslands"]:
         print(f'Grassland [{grassland.id}]')
         for animal in grassland.animals:
-            print(f'{grassland.animal}')
+            print(f'{animal.species}')
         for plant in grassland.plants:
-            print(f'{grassland.plant}')
+            print(f'{plant.species}')
     
     # for forest
     for forest in arboretum.biomes["Forests"]:
