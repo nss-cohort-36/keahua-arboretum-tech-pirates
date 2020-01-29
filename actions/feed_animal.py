@@ -42,6 +42,6 @@ def animal_to_feed_menu(arboretum):
     
 def prey_lists(arboretum):
     # os.system('cls' if os.name == 'nt' else 'clear')
-    print(f'1. {preyLists.fish}')
+    print(f'prey place holder')
     
     

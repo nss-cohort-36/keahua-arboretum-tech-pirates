@@ -1,5 +1,12 @@
 import os
-from animals import RiverDolphin
+from animals import river_dolphin
+from animals import goldDustDayGecko
+from animals import HappyFaceSpider
+from animals import Kikakapu
+from animals import neneGoose
+from animals import opeapea
+from animals import pueo
+from animals import ulae
 from interfaces.animals.grasslandy import Grasslandy
 from biomes.coastline import Coastline
 from actions.biome_menu import biome_menu
@@ -19,27 +26,28 @@ def release_animal(arboretum):
     choice = input("Choose animal to release into the chosen habitat > ")
 
     if choice == "1":
-        animal = GoldGecko()
+        animal = goldDustDayGecko()
 
     if choice == "2":
-        animal = RiverDolphin()
+        animal = river_dolphin()
+    
     if choice == "3":
-        animal = NeneGoose()
+        animal = neneGoose()
 
     if choice == "4":
         animal = Kikakapu()
 
     if choice == "5":
-        animal = Pueo()
+        animal = pueo()
 
     if choice == "6":
-        animal = Ulae()
+        animal = ulae()
 
     if choice == "7":
-        animal = Opeapea()
+        animal = opeapea()
 
     if choice == "8":
-        animal = HappySpider()
+        animal = HappyFaceSpider()
         
     else:
         input(" That sucked try again! ")
