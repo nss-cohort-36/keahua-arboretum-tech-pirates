@@ -1,4 +1,4 @@
-from .terrestrial import IsTerrestrial
+from interfaces.animals.terrestrial import IsTerrestrial
 
 class Grasslandy(IsTerrestrial):
     

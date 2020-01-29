@@ -1,6 +1,5 @@
 from animals import Animal
 from interfaces.animals import IsFreshwater
-from interfaces.animals.grasslandy import Grasslandy
 from interfaces import Identifiable
 
 class RiverDolphin(Animal, IsFreshwater, Identifiable):

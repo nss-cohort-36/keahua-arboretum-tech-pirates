@@ -7,10 +7,11 @@ from animals import neneGoose
 from animals import opeapea
 from animals import pueo
 from animals import ulae
-from biomes.grassland import Grasslandy
-from biomes.grassland import Grasslandy
-from biomes.grassland import Grasslandy
-from biomes.grassland import Grasslandy
+from interfaces.habitats.grasslandy import Grasslandy
+from interfaces.animals.freshwater import IsFreshwater
+# from interfaces.habitats.foresty import Forest
+# from interfaces.habitats.stagnanty import Stagnant
+# from interfaces.habitats.mountainy import Mountainy
 from biomes.coastline import Coastline
 from actions.biome_menu import biome_menu
 
@@ -66,8 +67,16 @@ def release_animal(arboretum):
         input("Hey that is not an acceptabe answer.")
         return
         #trying to write a loop with isinstance: which is a built in function that can check if my object is a type or not. Using it to check for instance of each animal and initiate append. 
-    if isinstance(animal):
-        for eachitem in arboretum.
+    if isinstance(animal, Grasslandy):
+        for eachitem in arboretum.rivers:
+            home_sweet_home.append(eachitem)
+            
+    if isinstance(animal, IsFreshwater):
+        for eachitem in arboretum.rivers:
+            home_sweet_home.append(eachitem)
+            
+    # for index, biome in enumerate(home_sweet_home):
+    #     print(f'{index + 1}. {biome.name} ({len(biome.animals)})')
 
     
 

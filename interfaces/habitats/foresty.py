@@ -1,6 +1,6 @@
-from .terrestrial import Terrestrial
+from .terrestrial import IsTerrestrial
 
-class Forest(Terrestrial):
+class Foresty(IsTerrestrial):
 
     def __init__(self):
         super().__init__()
