@@ -2,22 +2,43 @@ import os
 import sys
 sys.path.append('../')
 from arboretum import Arboretum
+from biomes import River
+from biomes import Swamp
+from biomes import Coastline
+from biomes import Grassland
+from biomes import Forest
+from biomes import Mountain
 
-def biome_menu(arboretum):
+def biome_menu(arboretum, plant):
+    print(plant)
 
     os.system('clear' if os.name == 'nt' else 'clear')
     # x = 1
     
     # biome_types = [Arboretum.rivers, Arboretum.grasslands, Arboretum.mountains, Arboretum.forests, Arboretum.swamps, Arboretum.coastlines
     # ]
+
+
     
-    # iterate through the biomes dictionary in Arboretum()
+    biomes_to_display = list()
     
-    for index, biome in enumerate(arboretum.biomes):
-        print({index + 1}, biome)
+    #retrieve all keys/values in list
+    for key, value in arboretum.biomes.items():
+        biomes_to_display += value
+        
+    for index, biome in enumerate(biomes_to_display):
+        print(f"{index +1} {biome.name} {biome.id}")
     
     choice = input("Choose a biome type for your plant > ")
+    
+    user_input = int(choice) - 1
+    
+    biomes_to_display[user_input].add_plant(plant)
+    
 
+    
+    
+    
 
 
 
@@ -45,4 +66,3 @@ def biome_menu(arboretum):
     # if choice == "6":
     #     Forest.add_plant(plant)
     
-

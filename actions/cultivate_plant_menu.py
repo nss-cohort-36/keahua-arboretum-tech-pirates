@@ -43,7 +43,7 @@ def cultivate_plant_menu(arboretum):
 
     # if choice == "5":
         
-    biome_menu(arboretum)
+    biome_menu(arboretum, plant)
 
     # if choice == "1":
     #     River.add_plant(plant)
