@@ -7,6 +7,7 @@ from interfaces.habitats.contains_plants import IContainsPlants
 class Coastline(Arboretum, Identifiable, IContainsAnimals, IContainsPlants):
 
     def __init__(self):
+        self.name = "Coastline"
         Identifiable.__init__(self)
         IContainsAnimals.__init__(self)
         IContainsPlants.__init__(self)

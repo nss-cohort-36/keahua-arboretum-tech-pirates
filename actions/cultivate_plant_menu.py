@@ -45,23 +45,23 @@ def cultivate_plant_menu(arboretum):
         
     biome_menu(arboretum)
 
-    if choice == "1":
-        River.add_plant(plant)
+    # if choice == "1":
+    #     River.add_plant(plant)
     
-    if choice == "2":
-        Coastline.add_plant(plant)
+    # if choice == "2":
+    #     Coastline.add_plant(plant)
     
-    if choice == "3":
-        Mountain.add_plant(plant)
+    # if choice == "3":
+    #     Mountain.add_plant(plant)
     
-    if choice == "4":
-        Grassland.add_plant(plant)
+    # if choice == "4":
+    #     Grassland.add_plant(plant)
         
-    if choice == "5":
-        Swamp.add_plant(plant)
+    # if choice == "5":
+    #     Swamp.add_plant(plant)
     
-    if choice == "6":
-        Forest.add_plant(plant)
+    # if choice == "6":
+    #     Forest.add_plant(plant)
 # ((((ISSUE: Per README, NEED FUNCTIONALITY THAT WILL PRODUCE THE FOLLOWING WHEN ONE OF THOSE CHOICES ARE MADE))))
 
 # 1. Grassland (5 plants)

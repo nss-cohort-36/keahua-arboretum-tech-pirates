@@ -25,22 +25,22 @@ def annex_biome(arboretum):
 # cp Need to change strings to display appropriately based on the README
     if choice == "1":
         river = River()
-        arboretum.rivers.append(river)
+        arboretum.biomes["Rivers"].append(river)
     if choice == "2":
         swamp = Swamp()
-        arboretum.swamps.append(swamp)
+        arboretum.biomes["Swamps"].append(swamp)
     if choice == "3":
         coastline = Coastline()
-        arboretum.coastlines.append(coastline)
+        arboretum.biomes["Coastlines"].append(coastline)
     if choice == "4":
         grassland = Grassland()
-        arboretum.grasslands.append(grassland)
+        arboretum.biomes["Grasslands"].append(grassland)
     if choice == "5":
         mountain = Mountain()
-        arboretum.mountains.append(mountain)
+        arboretum.biomes["Mountains"].append(mountain)
     if choice == "6":
         forest = Forest()
-        arboretum.forests.append(forest)
+        arboretum.biomes["Forests"].append(forest)
     # if choice == "7":
     #     main_menu(keahua)
 # cp Need to add functionality for append options
