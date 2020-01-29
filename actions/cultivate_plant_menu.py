@@ -27,7 +27,7 @@ def cultivate_plant_menu(arboretum):
     print("4. Blue Jade Vine")
     print("5. Main Menu")
 
-    choice = input("Choose plant to culitivate > ")
+    choice = input("Choose plant to cultivate > ")
 
     if choice == "1":
         plant = RainbowTree()

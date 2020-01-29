@@ -9,8 +9,8 @@ from biomes import Grassland
 from biomes import Forest
 from biomes import Mountain
 
-def biome_menu(arboretum, plant):
-    print(plant)
+def animal_biome_menu(arboretum, animal):
+    print(animal)
 
     os.system('clear' if os.name == 'nt' else 'clear')
     # x = 1
@@ -32,10 +32,10 @@ def biome_menu(arboretum, plant):
         print(f"{index +1} {biome.name} {biome.id}")
     
     # Prompts the user to choose a biome from our printed list
-    choice = input("Choose a biome type for your plant > ")
+    choice = input("Choose a biome type for your animal > ")
     
     # Takes the users input and cancels out the index + 1 in order to select the correct index position
     user_input = int(choice) - 1
     
     # Grabs the altered user input, accesses that index position in our biomes_to_display list, and adds the selected plant to that instance
-    biomes_to_display[user_input].add_plant(plant)
+    biomes_to_display[user_input].add_animal(animal)

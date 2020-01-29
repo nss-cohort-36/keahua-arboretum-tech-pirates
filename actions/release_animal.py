@@ -7,11 +7,13 @@ from animals.pueo import Pueo
 from animals.ulae import Ulae
 from animals.opeapea import Opeapea
 from animals.HappyFaceSpider import Hawaiian_Happy_Face_Spider
-from actions.biome_menu import biome_menu
+from actions.animal_biome_menu import animal_biome_menu
 
 def release_animal(arboretum):
     animal = None
-    os.system('cls' if os.name == 'nt' else 'clear')
+
+    os.system('clear' if os.name == 'nt' else 'clear')
+
     print("1. Gold Dust Day Gecko")
     print("2. River Dolphin")
     print("3. Nene Goose")
@@ -38,15 +40,9 @@ def release_animal(arboretum):
     if choice == "7":
         animal = Opeapea()
     if choice == "8":
-        animal = Hawaiian_Happy_Face_Spider()    
-    else:
-        input(" That sucked try again! ")
-        return
+        animal = Hawaiian_Happy_Face_Spider()
 
-    choice = input("Release the animal into which biome? >")
-
-    if choice == "1":
-        River.add_animal()
+    animal_biome_menu(arboretum, animal)
     
 
 

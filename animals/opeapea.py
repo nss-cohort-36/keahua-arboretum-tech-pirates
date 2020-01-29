@@ -6,7 +6,7 @@ from interfaces import IsFlying
 
 class Opeapea(Animal, IsFlying, Identifiable):
     def __init__(self):
-        Animal.__init__(self, "Ope'ape'a", "fred", 2)
+        Animal.__init__(self, "Ope'ape'a")
         IsFlying.__init__(self)
         Identifiable.__init__(self)
         self.__prey = { "Centipedes", "Cockroaches", "Assassin Bug", "Golden Tortoise Beetle", "Dobsonflies", "The Eastern Velvet Ant (Cow-Killer)", "Candlenut", "Pineapple", "Breadfruit", "Edible Canna", "Seagrape", "Papaya", "Coconut" }

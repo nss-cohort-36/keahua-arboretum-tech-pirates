@@ -4,7 +4,7 @@ from interfaces import Identifiable
 
 class Kikakapu(Animal, IsFreshwater, Identifiable):
     def __init__(self):
-        Animal.__init__(self, "Nene Goose")
+        Animal.__init__(self, "Kikakapu")
         IsFreshwater.__init__(self)
         Identifiable.__init__(self)
         self.__prey = { "Yellow Fin Tuna", "Mahi-Mahi", "Marlin", "Wahoo", "Ono", "Hapu'upu'u", "Kajiki", "Opakapaku", "Monchong" }
