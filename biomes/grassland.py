@@ -15,7 +15,7 @@ class Grassland(IContainsAnimals, IContainsPlants, Identifiable):
         self.max_animals = max_animals
         
     def add_animal(self, animal):
-        super().animals.append(animal)
+        self.animals.append(animal)
         
     def add_plant(self, plant):
-        super().plants.append(plant)
+        self.plants.append(plant)
