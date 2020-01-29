@@ -18,7 +18,7 @@ class Forest(IContainsAnimals, IContainsPlants, Identifiable):
         Identifiable.__init__(self)
 
     def add_animal(self, animal):
-        super().animals.append(animal)
+        self.animals.append(animal)
 
     def add_plant(self, plant):
-        super().plants.append(plant)
+        self.plants.append(plant)

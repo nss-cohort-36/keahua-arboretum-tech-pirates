@@ -2,64 +2,75 @@ import os
 import sys
 sys.path.append('../')
 from arboretum import Arboretum
+from biomes import River
+from biomes import Swamp
+from biomes import Coastline
+from biomes import Grassland
+from biomes import Forest
+from biomes import Mountain
 
-def biome_menu(arboretum):
+def biome_menu(arboretum, plant):
+    print(plant)
 
     os.system('clear' if os.name == 'nt' else 'clear')
     # x = 1
     
     # biome_types = [Arboretum.rivers, Arboretum.grasslands, Arboretum.mountains, Arboretum.forests, Arboretum.swamps, Arboretum.coastlines
     # ]
+
+
+    # Create empty list
+    biomes_to_display = list()
     
+    # Loops through biomes dictionary, then loops through dictionary items, grabs the value of every instance and adds that value to our empty list
+    for key, value in arboretum.biomes.items():
+        biomes_to_display += value
+
+    # Loops through our list, prints out a string with the index position plus one, the instance name, and the instance id
+    for index, biome in enumerate(biomes_to_display):
+        # The index + 1 is creating a logical list for the user instead of starting at index position 0
+        print(f"{index +1} {biome.name} {biome.id}")
     
-    
-    for index, biome in enumerate(arboretum.biomes):
-        print({index + 1}, biome)
-    
+    # Prompts the user to choose a biome from our printed list
     choice = input("Choose a biome type for your plant > ")
 
     if choice == "1":
         print()
     
+    # Takes the users input and cancels out the index + 1 in order to select the correct index position
+    user_input = int(choice) - 1
+    
+    # Grabs the altered user input, accesses that index position in our biomes_to_display list, and adds the selected plant to that instance
+    biomes_to_display[user_input].add_plant(plant)
+    
+
+    
+    
+    
+
+
+
+
+
+
+
     # capture user input
     # use index position
-    if choice == "1":
-        River.add_plant(plant)
+    # if choice == "1":
+    #     River.add_plant(plant)
     
-    if choice == "2":
-        Coastline.add_plant(plant)
+    # if choice == "2":
+    #     Coastline.add_plant(plant)
     
-    if choice == "3":
-        Mountain.add_plant(plant)
+    # if choice == "3":
+    #     Mountain.add_plant(plant)
     
-    if choice == "4":
-        Grassland.add_plant(plant)
+    # if choice == "4":
+    #     Grassland.add_plant(plant)
         
-    if choice == "5":
-        Swamp.add_plant(plant)
+    # if choice == "5":
+    #     Swamp.add_plant(plant)
     
-    if choice == "6":
-        Forest.add_plant(plant)
-    # for index, river in enumerate(arboretum.rivers):
-    #     print(f'{index + 1}. River {river.id}')
-
-    # for index, coastline in enumerate(arboretum.coastlines):
-    #     print(f'{index + 2}. Coastline {coastline.id}')
-
-    # for index, mountain in enumerate(arboretum.mountains):
-    #     print(f'{index + 3}. Mountain {mountain.id}')
-
-    # for index, grassland in enumerate(arboretum.grasslands):
-    #     print(f'{index + 4}. Grassland {grassland.id}')
-
-    # for index, swamp in enumerate(arboretum.swamps):
-    #     print(f'{index + 5}. Swamp {swamp.id}')
-
-    # for index, forest in enumerate(arboretum.forests):
-    #     print(f'{index + 6}. Forest {forest.id}')
-
-# biome_types = [Arboretum.rivers, Arboretum.grasslands, Arboretum.mountains, Arboretum.forests, Arboretum.swamps, Arboretum.coastlines
-# ]
-
-# for index, biome_type in enumerate(biome_types):
-#     print({index}, type)
+    # if choice == "6":
+    #     Forest.add_plant(plant)
+    
