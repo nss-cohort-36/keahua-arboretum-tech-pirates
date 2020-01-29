@@ -13,6 +13,14 @@ from interfaces.animals.freshwater import IsFreshwater
 # from interfaces.habitats.stagnanty import Stagnant
 # from interfaces.habitats.mountainy import Mountainy
 from biomes.coastline import Coastline
+from animals.river_dolphin import RiverDolphin
+from animals.neneGoose import Nene_Goose
+from animals.goldDustDayGecko import Gold_Dust_Day_Gecko
+from animals.kikakapu import Kikakapu
+from animals.pueo import Pueo
+from animals.ulae import Ulae
+from animals.opeapea import Opeapea
+from animals.HappyFaceSpider import Hawaiian_Happy_Face_Spider
 from actions.biome_menu import biome_menu
 
 def release_animal(arboretum):
@@ -23,7 +31,7 @@ def release_animal(arboretum):
     print("1. Gold Dust Day Gecko")
     print("2. River Dolphin")
     print("3. Nene Goose")
-    print("4. KiKakapu")
+    print("4. Kikakapu")
     print("5. Pueo")
     print("6. 'Ulae")
     print("7. Ope'ape'a")
@@ -78,6 +86,10 @@ def release_animal(arboretum):
     # for index, biome in enumerate(home_sweet_home):
     #     print(f'{index + 1}. {biome.name} ({len(biome.animals)})')
 
+    choice = input("Release the animal into which biome? >")
+
+    if choice == "1":
+        River.add_animal()
     
 
 # *******************************
