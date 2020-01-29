@@ -1,3 +1,4 @@
+import os
 from animals.river_dolphin import RiverDolphin
 from animals.neneGoose import Nene_Goose
 from animals.goldDustDayGecko import Gold_Dust_Day_Gecko
@@ -37,8 +38,7 @@ def release_animal(arboretum):
     if choice == "7":
         animal = Opeapea()
     if choice == "8":
-        animal = Hawaiian_Happy_Face_Spider()
-        
+        animal = Hawaiian_Happy_Face_Spider()    
     else:
         input(" That sucked try again! ")
         return
