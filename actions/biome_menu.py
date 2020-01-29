@@ -14,12 +14,29 @@ def biome_menu(arboretum):
     
     
     for index, biome in enumerate(arboretum.biomes):
-        print({index}, biome)
+        print({index + 1}, biome)
     
     choice = input("Choose a biome type for your plant > ")
     
+    # capture user input
+    # use index position
+    if choice == "1":
+        River.add_plant(plant)
     
+    if choice == "2":
+        Coastline.add_plant(plant)
     
+    if choice == "3":
+        Mountain.add_plant(plant)
+    
+    if choice == "4":
+        Grassland.add_plant(plant)
+        
+    if choice == "5":
+        Swamp.add_plant(plant)
+    
+    if choice == "6":
+        Forest.add_plant(plant)
     # for index, river in enumerate(arboretum.rivers):
     #     print(f'{index + 1}. River {river.id}')
 
