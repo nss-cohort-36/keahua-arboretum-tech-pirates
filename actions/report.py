@@ -11,14 +11,24 @@ def build_facility_report(arboretum):
         print(f'River [{river.id}]')
         for animal in river.animals:
             print(f'{river.animal}')
+        for plant in river.plants:
+            print(f'{river.plant}')
     
     # for mountain
     for mountain in arboretum.biomes["Mountains"]:
         print(f'Mountain [{mountain.id}]')
+        for animal in mountain.animals:
+            print(f'{mountain.animal}')
+        for plant in mountain.plants:
+            print(f'{mountain.plant}')
     
     # for grassland
     for grassland in arboretum.biomes["Grasslands"]:
         print(f'Grassland [{grassland.id}]')
+        for animal in grassland.animals:
+            print(f'{grassland.animal}')
+        for plant in grassland.plants:
+            print(f'{grassland.plant}')
     
     # for forest
     for forest in arboretum.biomes["Forests"]:
