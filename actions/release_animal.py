@@ -7,11 +7,16 @@ from animals import neneGoose
 from animals import opeapea
 from animals import pueo
 from animals import ulae
-from interfaces.animals.grasslandy import Grasslandy
+from biomes.grassland import Grasslandy
+from biomes.grassland import Grasslandy
+from biomes.grassland import Grasslandy
+from biomes.grassland import Grasslandy
 from biomes.coastline import Coastline
 from actions.biome_menu import biome_menu
 
 def release_animal(arboretum):
+    # Setting up an empty container for instances of each to go into when released.
+    home_sweet_home = []
     animal = None
     os.system('cls' if os.name == 'nt' else 'clear')
     print("1. Gold Dust Day Gecko")
@@ -27,37 +32,44 @@ def release_animal(arboretum):
 
     if choice == "1":
         animal = goldDustDayGecko()
-
+        print('Gold Dust Day Gecko Was Added too ?')
+    
     if choice == "2":
         animal = river_dolphin()
+        print('Dolphin was added to ?')
     
     if choice == "3":
         animal = neneGoose()
-
+        print('NeNe goose went somewhere ?')
+    
     if choice == "4":
         animal = Kikakapu()
-
+        print('Kikakapu go down the hole...')
+    
     if choice == "5":
         animal = pueo()
-
+        print('Pueo is a... animal. that goes places ?')
+    
     if choice == "6":
         animal = ulae()
-
+        print('Ulae where art thou? Ulae?')
+    
     if choice == "7":
         animal = opeapea()
-
+        print('Opeapea this guy a visit if you can find him...')
+    
     if choice == "8":
         animal = HappyFaceSpider()
+        print('Happy Face Spider goes.. let us be honest no one cares as long as it is not around. It is a spider.')
         
     else:
-        input(" That sucked try again! ")
+        input("Hey that is not an acceptabe answer.")
         return
+        #trying to write a loop with isinstance: which is a built in function that can check if my object is a type or not. Using it to check for instance of each animal and initiate append. 
+    if isinstance(animal):
+        for eachitem in arboretum.
 
-    if choice == "1":
-        River.add_animal()
-        print('Dolphin was added to River')
     
-
 
 # *******************************
 # Charles To-do Notes
